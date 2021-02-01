@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Case Converter</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<form>
+		<fieldset align="center" id="field">
+			<h1>Case Converter</h1>
+			<input type="button" value="I dont't speak english (português)" onclick="Translate()" onkeypress="tecla()">
+			<br><br>
+			<textarea placeholder="Your text here" id="text" class="text" oninput="counters()"></textarea>
+			<br><br>
+			<input type="button" value="Format phrase" onclick="Phrase()">
+			<input type="button" value="UPPER CASE" onclick="UpperCase()">
+			<input type="button" value="lower case" onclick="LowerCase()">
+			<input type="button" value="Captalized Text" onclick="Captalized()">
+			<input type="button" value="Copy to Clipboard" onclick="Copy()">
+			<input type="button" value="Clear" onclick="Clear()">
+			<div id="counters">
+				<p>
+					<span>| Number of characters: <span id="letters">0 </span> |</span>
+				</p>
+			</div>
+		</fieldset>
+	</form>
+	<script src="/js/code.js"></script>
+</html>
